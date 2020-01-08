@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TimelineContainer = styled.section`
-    grid-column: full-start / full-end;
+    grid-column: center-start / full-end;
 
     padding-top: 1rem;
     width: 100%;

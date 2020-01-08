@@ -17,12 +17,7 @@ export const GlobalStyles = createGlobalStyle`
 
     .App {
         display: grid;
-        grid-template-columns: [full-start] minmax(10rem, 1fr) [center-start] repeat(8, minmax(14rem, 18rem)) [center-end] minmax(10rem, 1fr) [full-end];
-    }
-
-    .App {
-        display: grid;
-        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, minmax(min-content, 14rem)) [center-end] minmax(6rem, 1fr) [full-end];
+        grid-template-columns: [full-start] 16.66666667% [center-start] repeat(8, minmax(min-content, 14rem)) [center-end] minmax(6rem, 1fr) [full-end];
         height: 100vh;
     }
 `;

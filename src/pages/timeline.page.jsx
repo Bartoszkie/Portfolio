@@ -10,6 +10,25 @@ const Timeline = () => {
         <TimelineContainer>
             <Cart right={rightFalse} />
             <Cart right={rightTrue} />
+            <Cart right={rightFalse} />
+            <Cart right={rightFalse} />
+            <Cart right={rightTrue} />
+            <Cart right={rightFalse} />
+            <Cart right={rightFalse} />
+            <Cart right={rightTrue} />
+            <Cart right={rightFalse} />
+            <Cart right={rightFalse} />
+            <Cart right={rightTrue} />
+            <Cart right={rightFalse} />
+            <Cart right={rightFalse} />
+            <Cart right={rightTrue} />
+            <Cart right={rightFalse} />
+            <Cart right={rightFalse} />
+            <Cart right={rightTrue} />
+            <Cart right={rightFalse} />
+            <Cart right={rightFalse} />
+            <Cart right={rightTrue} />
+            <Cart right={rightFalse} />
         </TimelineContainer>
     );
 }

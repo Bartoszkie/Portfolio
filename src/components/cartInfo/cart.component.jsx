@@ -15,10 +15,10 @@ const Cart = ({ right }) => {
   return (
     <CartContainer right={right}>
       <CartContainerContent right={right}>
-        <DateTag>Jan 11 2019</DateTag>
-        <InfoTag>Some description</InfoTag>
-        <LinkTag>Gihub.com</LinkTag>
-        <PlatformTag>YouTube</PlatformTag>
+        <DateTag right={right}>Jan 11 2019</DateTag>
+        <InfoTag right={right}>Some description</InfoTag>
+        <LinkTag right={right}>Gihub.com</LinkTag>
+        <PlatformTag right={right}>YouTube</PlatformTag>
         <Circle right={right}></Circle>
       </CartContainerContent>
     </CartContainer>
