@@ -1,4 +1,6 @@
 export const theme = {
     baseGoldenRod: "goldenrod",
-    baseRedColor: "#e17b77"
+    baseRedColor: "#000",
+    colorBaseWhite: "#fff", 
+    greyDateColor: "grey"
 }
