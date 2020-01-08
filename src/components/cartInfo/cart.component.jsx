@@ -9,15 +9,17 @@ import {
   PlatformTag
 } from "./cart.styles";
 
-const Cart = () => {
+const Cart = ({ right }) => {
+  console.log(right);
+
   return (
-    <CartContainer>
-      <CartContainerContent>
-        <DateTag>Jan 2018</DateTag>
+    <CartContainer right={right}>
+      <CartContainerContent right={right}>
+        <DateTag>Jan 11 2019</DateTag>
+        <InfoTag>Some description</InfoTag>
+        <LinkTag>Gihub.com</LinkTag>
         <PlatformTag>YouTube</PlatformTag>
-        <InfoTag>Some random text</InfoTag>
-        <LinkTag>Github -></LinkTag>
-        <Circle />
+        <Circle right={right}></Circle>
       </CartContainerContent>
     </CartContainer>
   );
