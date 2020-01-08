@@ -1,10 +1,13 @@
 import styled from 'styled-components';
 
 export const TimelineContainer = styled.section`
+    grid-column: center-start / center-end;
     width: 100%;
-    height: 100vh;
 
     background-color: ${({theme}) => theme.baseGoldenRod};
+
+    display: flex;
+    flex-direction: column;
 
     &::after {
         background-color: ${({theme}) => theme.baseRedColor};
