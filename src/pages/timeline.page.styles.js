@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {device} from '../styles/globalSizes';
 
 export const TimelineContainer = styled.section`
     grid-column: center-start / full-end;
@@ -11,6 +12,10 @@ export const TimelineContainer = styled.section`
     display: flex;
     flex-direction: column;
     position: relative;
+
+    @media ${device.laptopS} {
+        grid-column: full-start / full-end;
+    }
 
     &::after {
         background-color: ${({theme}) => theme.baseRedColor};

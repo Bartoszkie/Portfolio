@@ -14,7 +14,7 @@ export const CartContainerContent = styled.div`
   padding: 1rem 1rem 1rem 2rem;
   margin-left: ${({ right }) => (right ? "3rem" : "0rem")};
   margin-right: ${({ right }) => (right ? "0rem" : "3rem")};
-  width: 40%;
+  width: 60%;
   background-color: ${({ theme }) => theme.colorBaseWhite};
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
   border-radius: 0.5rem;
@@ -25,6 +25,10 @@ export const CartContainerContent = styled.div`
 
   position: relative;
   z-index: 10;
+
+  @media ${device.laptop} {
+    width: 80%;
+  }
 
   &::after {
     content: "";
