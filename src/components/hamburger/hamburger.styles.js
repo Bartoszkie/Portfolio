@@ -15,8 +15,9 @@ export const HamburgerContainer = styled.button`
     border-radius: 50%;
     padding: 1rem;
     outline: none;
-    border: ${({isOpen}) => isOpen ? ".1rem solid white" : "none"};
+    border: ${({isOpen}) => isOpen ? ".1rem solid white" : "transparent"};
     background-color: ${({theme}) => theme.baseRedColor};
+    transition: .2s all ease-in-out;
 
     cursor: pointer;
 

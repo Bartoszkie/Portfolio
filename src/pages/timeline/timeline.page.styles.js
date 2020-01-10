@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {device} from '../styles/globalSizes';
+import {device} from '../../styles/globalSizes';
 
 export const TimelineContainer = styled.section`
     grid-column: center-start / full-end;
@@ -7,7 +7,7 @@ export const TimelineContainer = styled.section`
     padding-top: 1rem;
     width: 100%;
 
-    background-color: ${({theme}) => theme.baseGoldenRod};
+    background-color: ${({theme}) => theme.baseWhiteColor};
 
     display: flex;
     flex-direction: column;

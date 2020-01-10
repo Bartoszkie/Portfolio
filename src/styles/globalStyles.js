@@ -9,10 +9,35 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     html {
         font-size: 62.5%;
         box-sizing: border-box;
         font-family: 'Open Sans', sans-serif;
+
+        @media only screen and (max-width: 75em) { 
+            font-size: 56.25%; 
+        }
+    
+        @media only screen and (max-width: 56.25em) { 
+            font-size: 50%; 
+        }
+    
+        @media only screen and (min-width: 112.5em) {
+            font-size: 75%; 
+        }
+
+    }
+
+    small {
+        font-size: 110%;
+
+        @media only screen and (max-width: 56.25em)  {
+            font-size: 130%;
+        }
     }
 
     .App {
