@@ -21,21 +21,11 @@ export const HamburgerContainer = styled.button`
 
     cursor: pointer;
 
+    i {
+        color: #950740;
+    }
+
     @media ${device.laptopS} {
         display: block;
-    }
-`;
-
-export const HamburgerDash = styled.div`
-    width: 80%;
-    height: .2rem;
-    background-color: ${({isOpen}) => isOpen ? "white" : "grey"};
-    position: relative;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-
-    &:not(:last-child) {
-        margin-bottom: .5rem;
     }
 `;

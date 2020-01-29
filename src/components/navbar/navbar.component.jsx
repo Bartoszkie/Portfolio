@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useOnClckOutside } from "../../hooks/useOnClickOutside";
 
 import {
@@ -16,14 +16,36 @@ import {
   AnimatedHref,
   NavbarDiv,
   MenuListFooter,
-  MenuLink
+  MenuLink,
+  ContactDetails, 
+  ContactDetailsMobile
 } from "./navbar.styles";
 import Hamburger from "../hamburger/hamburger.component";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [change, setChange] = useState(false);
   const node = useRef();
   useOnClckOutside(node, () => setIsOpen(false));
+
+  useEffect(() => {
+    updatePredicate();
+    window.addEventListener("resize", updatePredicate);
+  }, []);
+
+  useEffect(() => {
+    return () => window.removeEventListener("resize", updatePredicate);
+  }, []);
+
+  const updatePredicate = () => {
+    if (window.innerWidth > 809) {
+      setIsOpen(false);
+      setChange(true);
+    } else if (window.innerWidth < 809) {
+      setChange(false);
+    }
+  };
+  console.log(isOpen);
 
   return (
     <NavbarContainer isOpen={isOpen}>
@@ -35,7 +57,7 @@ const Navbar = () => {
         <MenuListWrapper>
           <MenuList>
             <MenuListItem>
-              <MenuLink to="/Portfolio">About Me</MenuLink>
+              <MenuLink to="/">About Me</MenuLink>
             </MenuListItem>
             <MenuListItem>
               <MenuLink to="/realizations">Realizations</MenuLink>
@@ -46,29 +68,71 @@ const Navbar = () => {
           </MenuList>
         </MenuListWrapper>
         <MenuListFooter>
-          <MenuList>
-            <MenuListItem>
-              <MenuLink to="/">Contact Me</MenuLink>
-            </MenuListItem>
-          </MenuList>
+          <ContactDetails>
+            <p>Contact</p>
+            <span>
+              <i class="fas fa-envelope-open-text"></i> bartek.slysz@gmail.com
+            </span>
+            <span>
+              <i class="fas fa-phone"></i> +48 662 920 264
+            </span>
+            <span>
+              <i class="fab fa-github"></i>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
+                My Github
+              </a>
+            </span>
+          </ContactDetails>
         </MenuListFooter>
       </NavbarDiv>
 
       <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
-      <BackgroundForMobileNav isOpen={isOpen} />
-      <BackgroundNav isOpen={isOpen}>
-        <BackgroundForMobileList isOpen={isOpen}>
+      <BackgroundForMobileNav change={change} isOpen={isOpen} />
+      <BackgroundNav change={change} isOpen={isOpen}>
+        <BackgroundForMobileList change={change} isOpen={isOpen}>
           <MobileListItem isOpen={isOpen}>
-            <AnimatedHref onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} to="/Portfolio">About Me</AnimatedHref>
+            <AnimatedHref
+              onClick={() => setIsOpen(!isOpen)}
+              isOpen={isOpen}
+              to="/"
+            >
+              About Me
+            </AnimatedHref>
           </MobileListItem>
           <MobileListItem isOpen={isOpen}>
-            <AnimatedHref onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} to="/realizations">Realizations</AnimatedHref>
+            <AnimatedHref
+              onClick={() => setIsOpen(!isOpen)}
+              isOpen={isOpen}
+              to="/realizations"
+            >
+              Realizations
+            </AnimatedHref>
           </MobileListItem>
           <MobileListItem isOpen={isOpen}>
-            <AnimatedHref onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} to="/timeline">Timeline</AnimatedHref>
+            <AnimatedHref
+              onClick={() => setIsOpen(!isOpen)}
+              isOpen={isOpen}
+              to="/timeline"
+            >
+              Timeline
+            </AnimatedHref>
           </MobileListItem>
           <MobileListItem isOpen={isOpen}>
-            <AnimatedHref>Contact</AnimatedHref>
+            <ContactDetailsMobile>
+              <p>Contact</p>
+              <span>
+                <i class="fas fa-envelope-open-text"></i> bartek.slysz@gmail.com
+              </span>
+              <span>
+                <i class="fas fa-phone"></i> +48 662 920 264
+              </span>
+              <span>
+                <i class="fab fa-github"></i>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
+                  My Github
+                </a>
+              </span>
+            </ContactDetailsMobile>
           </MobileListItem>
         </BackgroundForMobileList>
       </BackgroundNav>

@@ -1,12 +1,10 @@
 import React from "react";
-import { HamburgerContainer, HamburgerDash } from "./hamburger.styles";
+import { HamburgerContainer } from "./hamburger.styles";
 
 const Hamburger = ({ isOpen, setIsOpen }) => {
   return (
-    <HamburgerContainer isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
-      <HamburgerDash isOpen={isOpen}/>
-      <HamburgerDash isOpen={isOpen}/>
-      <HamburgerDash isOpen={isOpen}/>
+    <HamburgerContainer name="mobile-button" isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
+      <i class="fas fa-bars"></i>
     </HamburgerContainer>
   );
 };

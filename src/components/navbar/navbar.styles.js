@@ -25,7 +25,10 @@ export const BackgroundForMobileNav = styled.div`
 
   border-radius: 50%;
   transform: ${({ isOpen }) => (isOpen ? "scale(120)" : "scale(0)")};
-  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: ${({ change }) =>
+    change
+      ? "transform 0s cubic-bezier(0.86, 0, 0.07, 1);"
+      : "transform 1s cubic-bezier(0.86, 0, 0.07, 1);"};
 
   height: 3rem;
   width: 3rem;
@@ -39,8 +42,10 @@ export const BackgroundNav = styled.nav`
   top: 0;
   left: 0;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
+  transition: ${({ change }) =>
+    change
+      ? "all 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);"
+      : "all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);"};
   text-align: center;
 
   z-index: -100;
@@ -59,6 +64,82 @@ export const BackgroundForMobileList = styled.ul`
 
   @media ${device.laptopS} {
     display: unset;
+  }
+`;
+
+export const ContactDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & > p {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  & p:first-child {
+    font-size: 1.7rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #950740;
+    margin-bottom: 1rem;
+  }
+
+  & > span {
+    & > a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    & > i {
+      margin-right: 0.5rem;
+      color: #950740;
+    }
+    margin: 0.9rem 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+`;
+
+export const ContactDetailsMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10rem;
+
+  & > p {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  & p:first-child {
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #950740;
+    margin-bottom: 1rem;
+  }
+
+  & > span {
+    & > a {
+      text-decoration: none;
+      color: #fff;
+    }
+
+    & > i {
+      margin-right: 0.5rem;
+      color: #950740;
+    }
+    margin: 0.9rem 0;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
   }
 `;
 

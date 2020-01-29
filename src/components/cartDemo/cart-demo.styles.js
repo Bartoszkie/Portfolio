@@ -32,7 +32,7 @@ export const CartDemoImg = styled.img`
 export const CartDemoDescr = styled.p`
   text-align: justify;
 
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #333;
   line-height: 2.2rem;
 

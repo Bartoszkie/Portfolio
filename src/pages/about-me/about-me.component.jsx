@@ -13,18 +13,10 @@ import {
   AboutMeSectionCol2,
   AboutFooter,
   AboutFooterItem,
-  AboutFooterItemPic,
   AboutFooterItemDesc,
   AboutFooterHeader,
   AboutFooterContent
 } from "./about-me.styles";
-
-import HtmlLogo from "../../assets/IMG/html-icon.png";
-import CssLogo from "../../assets/IMG/sass-icon.png";
-import JsLogo from "../../assets/IMG/js-icon.png";
-import ReactLogo from "../../assets/IMG/react-icon.png";
-import RwdLogo from "../../assets/IMG/rwd-icon.png";
-import NodeLogo from "../../assets/IMG/node-icon.png";
 
 const AboutMe = () => {
   return (
@@ -52,7 +44,8 @@ const AboutMe = () => {
             Junior Frontend Developer. My adventure with programming started in
             middle school when I was participating in programming contest. C++
             came up and my programing-skills curve was born.
-            <br></br><br></br>
+            <br></br>
+            <br></br>
             Later in high school I have discovered Java. OOP paradigm was so
             beautifull to me that I couldn't resist to stop learning it. But my
             "thing" came up when I have came across on advanced HTMl and CSS.
@@ -60,7 +53,8 @@ const AboutMe = () => {
             wanted to learn more about it. So then JavaScript came up in my
             desktop. Speed of development even more complicated programs in JS
             was so astonishing that I made decision that this is "my" language.
-            <br></br><br></br>
+            <br></br>
+            <br></br>
             And according to that decision, during second year of colleague
             React.js, Sass, Node.js bring me here where I am now and my goal is
             to get as much knoweldge about web technologies as it is possible.
@@ -72,7 +66,7 @@ const AboutMe = () => {
         <AboutFooterContent>
           <AboutFooterItem>
             <div>
-              <AboutFooterItemPic src={HtmlLogo} />
+              <i className="fab fa-html5 fa-9x"></i>
             </div>
             <AboutFooterItemDesc>
               HTML 5 and its APIs are known to me very well. In my projects I am
@@ -81,7 +75,7 @@ const AboutMe = () => {
           </AboutFooterItem>
           <AboutFooterItem>
             <div>
-              <AboutFooterItemPic src={CssLogo} />
+              <i className="fab fa-css3 fa-9x"></i>
             </div>
             <AboutFooterItemDesc>
               CSS 3 is also no secret to me. Mechanism of cascade, BEM, Sass -
@@ -90,7 +84,7 @@ const AboutMe = () => {
           </AboutFooterItem>
           <AboutFooterItem>
             <div>
-              <AboutFooterItemPic src={JsLogo} />
+              <i className="fab fa-js fa-9x"></i>
             </div>
             <AboutFooterItemDesc>
               There it is, my main superpower. Closures, scopes, prototypal
@@ -100,7 +94,7 @@ const AboutMe = () => {
           </AboutFooterItem>
           <AboutFooterItem>
             <div>
-              <AboutFooterItemPic src={ReactLogo} />
+              <i className="fab fa-react fa-9x"></i>
             </div>
             <AboutFooterItemDesc>
               In 2020 there is no way we can skip JS framework. Mine is
@@ -110,7 +104,7 @@ const AboutMe = () => {
           </AboutFooterItem>
           <AboutFooterItem>
             <div>
-              <AboutFooterItemPic src={RwdLogo} />
+              <i className="fas fa-mobile-alt fa-9x"></i>
             </div>
             <AboutFooterItemDesc>
               In 2020 you can not go online without having a mobile responsive
@@ -119,7 +113,7 @@ const AboutMe = () => {
           </AboutFooterItem>
           <AboutFooterItem>
             <div>
-              <AboutFooterItemPic src={NodeLogo} />
+            <i className="fab fa-node fa-9x"></i>
             </div>
             <AboutFooterItemDesc>
               Lately for backend development I have been using Spring Boot. But

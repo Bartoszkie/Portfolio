@@ -139,6 +139,8 @@ export const AboutMeParagraph = styled.p`
 `;
 
 export const AboutFooter = styled.footer`
+  margin: 0 15rem;
+
   grid-column: 1 / -1;
   grid-row: 3 / -1;
   display: grid;
@@ -146,6 +148,18 @@ export const AboutFooter = styled.footer`
   grid-template-rows: min-content min-content;
   align-items: start;
   justify-content: center;
+
+  @media ${device.laptopL} {
+    margin: 0 5rem;
+  }
+
+  @media ${device.laptop} {
+    margin: 0 1rem;
+  }
+
+  @media ${device.tablet} {
+    margin: 0;
+  }
 `;
 
 export const AboutFooterHeader = styled.h5`
@@ -171,25 +185,36 @@ export const AboutFooterContent = styled.section`
   justify-content: center;
   align-content: center;
   row-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-`;
+  grid-template-columns: repeat(3, minmax(25rem, 1fr));
 
-export const AboutFooterItem = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @media ${device.laptopS}  {
+    grid-template-columns: repeat(2, minmax(25rem, 1fr));
+  }
 
-  & div {
-    min-height: 9rem;
+  @media ${device.mobileL}  {
+    grid-template-columns: repeat(1, minmax(25rem, 1fr));
+    row-gap: 5rem;
   }
 `;
 
-export const AboutFooterItemPic = styled.img`
-  transform: scale(0.7);
+export const AboutFooterItem = styled.div`
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: min-content 1fr; 
+  row-gap: .8rem;
+
+  & > div {
+    grid-column: 1 / -1; 
+    grid-row: 1 / 2;
+    justify-self: center;
+    color: #950740;
+  }
 `;
+
 
 export const AboutFooterItemDesc = styled.small`
   padding: 0rem 5rem;
   text-align: center;
+  font-size: 1.6rem;
+  color: #333;
 `;
