@@ -25,7 +25,7 @@ export const BackgroundForMobileNav = styled.div`
 
   border-radius: 50%;
   transform: ${({ isOpen }) => (isOpen ? "scale(120)" : "scale(0)")};
-  transition: transform 1.3s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1s cubic-bezier(0.86, 0, 0.07, 1);
 
   height: 3rem;
   width: 3rem;
@@ -66,7 +66,7 @@ export const MobileListItem = styled.li`
   cursor: pointer;
   transform: ${({ isOpen }) =>
     isOpen ? "translateX(0)" : "translateX(150vw)"};
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   width: 100%;
   &:not(:last-child) {
