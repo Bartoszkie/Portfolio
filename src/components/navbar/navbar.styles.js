@@ -39,7 +39,7 @@ export const BackgroundNav = styled.nav`
   top: 0;
   left: 0;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   text-align: center;
 
@@ -66,7 +66,7 @@ export const MobileListItem = styled.li`
   cursor: pointer;
   transform: ${({ isOpen }) =>
     isOpen ? "translateX(0)" : "translateX(150vw)"};
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   width: 100%;
   &:not(:last-child) {
