@@ -25,7 +25,7 @@ export const BackgroundForMobileNav = styled.div`
 
   border-radius: 50%;
   transform: ${({ isOpen }) => (isOpen ? "scale(120)" : "scale(0)")};
-  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 1.3s cubic-bezier(0.86, 0, 0.07, 1);
 
   height: 3rem;
   width: 3rem;
