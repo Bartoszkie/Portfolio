@@ -9,6 +9,11 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: inherit;
     }
 
+    ::selection {
+        color: #fff;
+        background: #950740;
+    }
+
     a {
         text-decoration: none;
     }
