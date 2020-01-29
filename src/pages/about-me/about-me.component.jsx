@@ -22,7 +22,6 @@ import {
 import HtmlLogo from "../../assets/IMG/html-icon.png";
 import CssLogo from "../../assets/IMG/sass-icon.png";
 import JsLogo from "../../assets/IMG/js-icon.png";
-import JavaLogo from "../../assets/IMG/java-icon.png";
 import ReactLogo from "../../assets/IMG/react-icon.png";
 import RwdLogo from "../../assets/IMG/rwd-icon.png";
 import NodeLogo from "../../assets/IMG/node-icon.png";
@@ -49,31 +48,25 @@ const AboutMe = () => {
 
         <AboutMeSectionCol2>
           <AboutMeParagraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.
+            So, just like in header my name is Bartosz Słysz, I am 21 and I am
+            Junior Frontend Developer. My adventure with programming started in
+            middle school when I was participating in programming contest. C++
+            came up and my programing-skills curve was born.
+            <br></br><br></br>
+            Later in high school I have discovered Java. OOP paradigm was so
+            beautifull to me that I couldn't resist to stop learning it. But my
+            "thing" came up when I have came across on advanced HTMl and CSS.
+            Simplicity of creation astonishing websites just enchanted me. I
+            wanted to learn more about it. So then JavaScript came up in my
+            desktop. Speed of development even more complicated programs in JS
+            was so astonishing that I made decision that this is "my" language.
+            <br></br><br></br>
+            And according to that decision, during second year of colleague
+            React.js, Sass, Node.js bring me here where I am now and my goal is
+            to get as much knoweldge about web technologies as it is possible.
           </AboutMeParagraph>
         </AboutMeSectionCol2>
       </AboutSection>
-
       <AboutFooter>
         <AboutFooterHeader>What are my superpowers?</AboutFooterHeader>
         <AboutFooterContent>
@@ -82,8 +75,8 @@ const AboutMe = () => {
               <AboutFooterItemPic src={HtmlLogo} />
             </div>
             <AboutFooterItemDesc>
-              HTML, CSS (Bootstrap, Foundation), JavaScript (React, Node,
-              Express, MongoDB) ? You name it. I have it all covered!
+              HTML 5 and its APIs are known to me very well. In my projects I am
+              using as much semantic HTML / JSX as it is possible.
             </AboutFooterItemDesc>
           </AboutFooterItem>
           <AboutFooterItem>
@@ -91,8 +84,8 @@ const AboutMe = () => {
               <AboutFooterItemPic src={CssLogo} />
             </div>
             <AboutFooterItemDesc>
-              In 2020 you can't go online without having a mobile responsive
-              website. Let me take care of that for you!
+              CSS 3 is also no secret to me. Mechanism of cascade, BEM, Sass -
+              it is all in my "styling" equipment.
             </AboutFooterItemDesc>
           </AboutFooterItem>
           <AboutFooterItem>
@@ -100,8 +93,9 @@ const AboutMe = () => {
               <AboutFooterItemPic src={JsLogo} />
             </div>
             <AboutFooterItemDesc>
-              Millions of website are built on top of Wordpress, yours can
-              become the next one!
+              There it is, my main superpower. Closures, scopes, prototypal
+              inheritance, OOP, functional programing - I know it all and I am
+              still learning it all.
             </AboutFooterItemDesc>
           </AboutFooterItem>
           <AboutFooterItem>
@@ -109,9 +103,9 @@ const AboutMe = () => {
               <AboutFooterItemPic src={ReactLogo} />
             </div>
             <AboutFooterItemDesc>
-              Do you have a nice design in photoshop or even sketch? Contact me
-              and I'll convert them into fully responsive, nice looking
-              websites!
+              In 2020 there is no way we can skip JS framework. Mine is
+              React.js. Speed of development, ease of scaling project
+              capabilities bring me to that force side.
             </AboutFooterItemDesc>
           </AboutFooterItem>
           <AboutFooterItem>
@@ -119,9 +113,8 @@ const AboutMe = () => {
               <AboutFooterItemPic src={RwdLogo} />
             </div>
             <AboutFooterItemDesc>
-              Do you have a nice design in photoshop or even sketch? Contact me
-              and I'll convert them into fully responsive, nice looking
-              websites!
+              In 2020 you can not go online without having a mobile responsive
+              website, so here it is in my skills pack.
             </AboutFooterItemDesc>
           </AboutFooterItem>
           <AboutFooterItem>
@@ -129,8 +122,9 @@ const AboutMe = () => {
               <AboutFooterItemPic src={NodeLogo} />
             </div>
             <AboutFooterItemDesc>
-              In 2020 you can't go online without having a mobile responsive
-              website. Let me take care of that for you!
+              Lately for backend development I have been using Spring Boot. But
+              when I have known JS better than Java it is easier to me to
+              develop JS backend as well.
             </AboutFooterItemDesc>
           </AboutFooterItem>
         </AboutFooterContent>

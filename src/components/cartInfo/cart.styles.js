@@ -8,6 +8,9 @@ export const CartContainer = styled.div`
   justify-content: ${({ right }) => (right ? "flex-start" : "flex-end")};
 
   margin-bottom: 5rem;
+  &:first-child {
+    margin-top: 3rem;
+  }
 `;
 
 export const CartContainerContent = styled.div`
@@ -24,7 +27,6 @@ export const CartContainerContent = styled.div`
   grid-template-columns: repeat(2, 1fr);
 
   position: relative;
-  z-index: 10;
 
   @media ${device.laptop} {
     width: 80%;
@@ -54,19 +56,25 @@ export const DateTag = styled.time`
   color: ${({ theme }) => theme.greyDateColor};
   font-size: 1.2rem;
   justify-self: ${({ right }) => (right ? "start" : "end")};
+  text-align: ${({ right }) => (right ? "left" : "right")};
 `;
 
 export const PlatformTag = styled.span`
   grid-row: 1 / 2;
   grid-column: ${({ right }) => (right ? "2 / -1" : "1 / 2")};
   justify-self: ${({ right }) => (right ? "end" : "start")};
+  align-self: center;
 
   font-size: 1.2rem;
 `;
 
 export const InfoTag = styled.p`
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.3);
+
+  padding: 1rem 0 0.5rem;
   grid-column: 1 / -1;
   font-size: 1.6rem;
+  text-align: ${({ right }) => (right ? "left" : "right")};
 
   justify-self: ${({ right }) => (right ? "start" : "end")};
 `;
@@ -74,7 +82,18 @@ export const InfoTag = styled.p`
 export const LinkTag = styled.a`
   grid-column: 1 / -1;
   font-size: 1.4rem;
+  padding: 0.3rem;
   justify-self: ${({ right }) => (right ? "start" : "end")};
+  background-color: ${({ bgColor }) => (bgColor ? "#950740" : "transparent")};
+  color: ${({ bgColor }) => (bgColor ? "#fff" : "transparent")};
+  border-radius: 0.2rem;
+  cursor: pointer;
+
+  @media ${device.mobileL} {
+    justify-self: center;
+    width: 100%;
+    text-align: center;
+  }
 `;
 
 export const Circle = styled.span`
@@ -93,7 +112,7 @@ export const Circle = styled.span`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 9;
 
   &::after {
     content: "";

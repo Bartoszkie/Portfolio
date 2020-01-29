@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import bgImageHeader from "../../assets/IMG/bg-header-about-me.jpg";
-import {device} from '../../styles/globalSizes';
+import { device } from "../../styles/globalSizes";
 
 export const AboutMeContainer = styled.section`
   grid-column: center-start / full-end;
@@ -22,11 +22,22 @@ export const AboutMeHeader = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
-  background-image: url(${bgImageHeader});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(${bgImageHeader});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    z-index: -1;
+    filter: brightness(0.70);
+  }
 `;
 
 export const AboutMeHeaderSection = styled.section`
@@ -37,8 +48,8 @@ export const AboutMeHeaderSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   text-align: center;
+  text-shadow: .1rem .1rem .1rem black;
 `;
 
 export const AboutMeH6 = styled.h6`
@@ -117,7 +128,6 @@ export const AboutMeSectionCol2 = styled.div`
   @media ${device.mobileM} {
     padding: 3rem 3.5rem;
   }
-
 `;
 
 export const AboutMeParagraph = styled.p`
@@ -139,14 +149,15 @@ export const AboutFooter = styled.footer`
 `;
 
 export const AboutFooterHeader = styled.h5`
+  text-align: center;
   font-size: 2.5rem;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
 
   justify-self: center;
 
   margin: 0 0 3rem 0;
 
-  grid-column: 1 / -1; 
+  grid-column: 1 / -1;
   grid-row: 1 / 2;
 `;
 
@@ -170,12 +181,12 @@ export const AboutFooterItem = styled.div`
   justify-content: center;
 
   & div {
-      min-height: 9rem;
+    min-height: 9rem;
   }
 `;
 
 export const AboutFooterItemPic = styled.img`
-  transform: scale(.7);
+  transform: scale(0.7);
 `;
 
 export const AboutFooterItemDesc = styled.small`

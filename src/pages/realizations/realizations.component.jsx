@@ -1,5 +1,12 @@
 import React from "react";
 import CartDemo from "../../components/cartDemo/cart-demo.component";
+import {
+  CartDemoText1,
+  CartDemoCSSGrid,
+  CartDemoECancelary,
+  CartDemoFlexBox,
+  CartDemoFloats
+} from "../.././texts/cart-demo.texts";
 
 import {
   RealizationsContainer,
@@ -22,12 +29,37 @@ const Realizations = () => {
         </RealizationsP>
       </RealizationsHeader>
       <RealizationsContent>
-        <CartDemo img={CrwnSS} description="simple web app" />
-        <CartDemo img={CrwnSS} description="simple web app" />
-
-        <CartDemo img={CrwnSS} description="simple web app" />
-
-        </RealizationsContent>
+        <CartDemo
+          img={CrwnSS}
+          title="CRWN CLOTHNING"
+          description={CartDemoText1}
+          tech="React,SASS,Redux,Firebase,StyledComponents"
+        />
+        <CartDemo
+          img={CrwnSS}
+          title="Flexbox Project"
+          description={CartDemoFlexBox}
+          tech="HTML 5,SASS"
+        />
+        <CartDemo
+          img={CrwnSS}
+          title="Floats Project"
+          description={CartDemoFloats}
+          tech="HTML 5,SASS"
+        />
+        <CartDemo
+          img={CrwnSS}
+          title="CSS GRID Project"
+          description={CartDemoCSSGrid}
+          tech="HTML 5,SASS"
+        />
+        <CartDemo
+          img={CrwnSS}
+          title="E-Cancelary"
+          description={CartDemoECancelary}
+          tech="React,SASS,StyledComponents,Firebase,Node.js"
+        />
+      </RealizationsContent>
     </RealizationsContainer>
   );
 };

@@ -12,12 +12,21 @@ export const CartDemoContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr min-content;
+
+  @media ${device.mobileXL} {
+    grid-template-rows: 1fr min-content min-content;
+  }
 `;
 
 export const CartDemoImg = styled.img`
   width: 100%;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+
+  @media ${device.mobileXL} {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
 `;
 
 export const CartDemoDescr = styled.p`
@@ -28,13 +37,19 @@ export const CartDemoDescr = styled.p`
   line-height: 2.2rem;
 
   &:not(:first-child) {
-    margin-left: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 `;
 
 export const CartDemoDetails = styled.div`
   grid-column: 2 / -1;
   grid-row: 1 / 2;
+
+  @media ${device.mobileXL} {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
 
   display: flex;
   flex-direction: column;
@@ -60,6 +75,23 @@ export const TechNames = styled.h5`
   display: inline-block;
   font-size: 2rem;
   letter-spacing: 0.4rem;
+  margin: 0 0.7rem;
+
+  @media ${device.mobileL} {
+    font-size: 1.8rem;
+    margin-left: 0.9rem;
+  }
+`;
+
+export const TechNamesP = styled.p`
+  font-size: 1.8rem;
+  letter-spacing: 0.4rem;
+  font-weight: 400;
+  margin: 0 0.7rem;
+
+  @media ${device.mobileL} {
+    font-size: 1.5rem;
+  }
 `;
 
 export const CartDemoFooter = styled.footer`
@@ -67,7 +99,13 @@ export const CartDemoFooter = styled.footer`
   grid-column: 1 / -1;
   grid-row: 2 / -1;
 
+  @media ${device.mobileXL} {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 `;

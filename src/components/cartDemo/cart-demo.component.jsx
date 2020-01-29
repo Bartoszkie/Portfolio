@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   CartDemoContainer,
   CartDemoImg,
@@ -6,29 +6,32 @@ import {
   CartDemoDetails,
   CartDemoDetailsName,
   CartDemoFooter,
-  TechNames
+  TechNames,
+  TechNamesP
 } from "./cart-demo.styles";
 
-// import ReactLogo from "../../assets/IMG/react-icon.png";
-// import HtmlLogo from "../../assets/IMG/html-icon.png";
-// import Csslogo from "../../assets/IMG/sass-icon.png";
-// import RwdLogo from "../../assets/IMG/rwd-icon.png";
-
-// import { ImagesArray } from "./imagesObject";
-
 const CartDemo = props => {
+  const [techStack, setTechStack] = useState([]);
+
+  useEffect(() => {
+    if (props.tech !== undefined) {
+      const techStack = props.tech.split(",");
+      setTechStack(techStack);
+    }
+  }, [props.tech]);
+
   return (
     <CartDemoContainer>
       <CartDemoImg src={props.img} />
       <CartDemoDetails>
-        <CartDemoDetailsName>Crwn Clothing</CartDemoDetailsName>
+        <CartDemoDetailsName>{props.title}</CartDemoDetailsName>
         <CartDemoDescr>{props.description}</CartDemoDescr>
       </CartDemoDetails>
       <CartDemoFooter>
-          <TechNames>Tech stack:</TechNames>
-          <CartDemoDescr>React</CartDemoDescr>
-          <CartDemoDescr>React</CartDemoDescr>
-          <CartDemoDescr>React</CartDemoDescr>
+        <TechNames>Tech stack:</TechNames>
+        {techStack.map(item => (
+          <TechNamesP>{item}</TechNamesP>
+        ))}
       </CartDemoFooter>
     </CartDemoContainer>
   );

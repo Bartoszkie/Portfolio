@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import { useOnClckOutside } from "../../hooks/useOnClickOutside";
+
 import {
   NavbarContainer,
   NavbarMainContainer,
@@ -20,6 +22,8 @@ import Hamburger from "../hamburger/hamburger.component";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const node = useRef();
+  useOnClckOutside(node, () => setIsOpen(false));
 
   return (
     <NavbarContainer isOpen={isOpen}>
@@ -53,12 +57,18 @@ const Navbar = () => {
       <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
       <BackgroundForMobileNav isOpen={isOpen} />
       <BackgroundNav isOpen={isOpen}>
-        <BackgroundForMobileList>
-          <MobileListItem>
-            <AnimatedHref>O mnie</AnimatedHref>
+        <BackgroundForMobileList isOpen={isOpen}>
+          <MobileListItem isOpen={isOpen}>
+            <AnimatedHref onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} to="/">About Me</AnimatedHref>
           </MobileListItem>
-          <MobileListItem>
-            <AnimatedHref>Timeline</AnimatedHref>
+          <MobileListItem isOpen={isOpen}>
+            <AnimatedHref onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} to="/realizations">Realizations</AnimatedHref>
+          </MobileListItem>
+          <MobileListItem isOpen={isOpen}>
+            <AnimatedHref onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} to="/timeline">Timeline</AnimatedHref>
+          </MobileListItem>
+          <MobileListItem isOpen={isOpen}>
+            <AnimatedHref>Contact</AnimatedHref>
           </MobileListItem>
         </BackgroundForMobileList>
       </BackgroundNav>

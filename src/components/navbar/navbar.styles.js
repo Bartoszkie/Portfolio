@@ -14,7 +14,7 @@ export const NavbarContainer = styled.section`
     left: ${({ isOpen }) => (isOpen ? "80%" : "100%")};
     right: 0;
     top: 0;
-    z-index: 100;
+    z-index: 10;
   }
 `;
 
@@ -29,12 +29,12 @@ export const BackgroundForMobileNav = styled.div`
 
   height: 3rem;
   width: 3rem;
-  background-image: radial-gradient(black, goldenrod);
+  background-image: radial-gradient(black, black);
 `;
 
 export const BackgroundNav = styled.nav`
   height: 100vh;
-  width: 100%;
+  width: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   position: fixed;
   top: 0;
   left: 0;
@@ -42,6 +42,11 @@ export const BackgroundNav = styled.nav`
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   text-align: center;
+
+  z-index: -100;
+  @media ${device.laptopS} {
+    z-index: 10;
+  }
 `;
 
 export const BackgroundForMobileList = styled.ul`
@@ -50,7 +55,6 @@ export const BackgroundForMobileList = styled.ul`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   display: none;
 
   @media ${device.laptopS} {
@@ -60,6 +64,9 @@ export const BackgroundForMobileList = styled.ul`
 
 export const MobileListItem = styled.li`
   cursor: pointer;
+  transform: ${({ isOpen }) =>
+    isOpen ? "translateX(0)" : "translateX(150vw)"};
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   width: 100%;
   &:not(:last-child) {
@@ -67,9 +74,8 @@ export const MobileListItem = styled.li`
   }
 `;
 
-export const AnimatedHref = styled.a`
+export const AnimatedHref = styled(Link)`
   font-size: 3rem;
-  display: inline-block;
   font-weight: 300;
   padding: 1rem 2rem;
   color: #fff;
@@ -131,7 +137,7 @@ export const Signature = styled.h5`
   text-align: center;
 
   font-size: 1.6rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   margin: 1.5rem 0 1rem;
   color: ${({ theme }) => theme.colorBaseWhite};
@@ -157,9 +163,24 @@ export const MenuListItem = styled.li`
 export const MenuLink = styled(Link)`
   text-align: center;
 
-  color: ${({theme}) => theme.colorBaseWhite};
+  color: ${({ theme }) => theme.colorBaseWhite};
 
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-size: 1.5rem;
+  transition: 0.2s ease-in-out all;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #950740;
+    width: 0%;
+    height: 0.2rem;
+    margin-top: 0.2rem;
+    transition: 0.2s ease-in-out all;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 `;
