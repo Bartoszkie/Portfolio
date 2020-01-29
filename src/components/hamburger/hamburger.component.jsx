@@ -1,10 +1,10 @@
 import React from "react";
 import { HamburgerContainer } from "./hamburger.styles";
 
-const Hamburger = ({ isOpen, setIsOpen }) => {
+const Hamburger = ({ isopen, setIsOpen }) => {
   return (
-    <HamburgerContainer name="mobile-button" isOpen={isOpen} onClick={() => setIsOpen(!isOpen)}>
-      <i class="fas fa-bars"></i>
+    <HamburgerContainer name="mobile-button" isopen={isopen} onClick={() => setIsOpen(!isopen)}>
+      <i className="fas fa-bars"></i>
     </HamburgerContainer>
   );
 };

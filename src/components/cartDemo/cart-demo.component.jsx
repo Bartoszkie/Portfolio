@@ -29,8 +29,8 @@ const CartDemo = props => {
       </CartDemoDetails>
       <CartDemoFooter>
         <TechNames>Tech stack:</TechNames>
-        {techStack.map(item => (
-          <TechNamesP>{item}</TechNamesP>
+        {techStack.map((item, index) => (
+          <TechNamesP key={index}>{item}</TechNamesP>
         ))}
       </CartDemoFooter>
     </CartDemoContainer>

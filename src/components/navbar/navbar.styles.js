@@ -11,7 +11,7 @@ export const NavbarContainer = styled.section`
     grid-column: none;
     position: fixed;
     background-color: transparent;
-    left: ${({ isOpen }) => (isOpen ? "80%" : "100%")};
+    left: ${({ isopen }) => (isopen ? "80%" : "100%")};
     right: 0;
     top: 0;
     z-index: 10;
@@ -25,7 +25,7 @@ export const BackgroundForMobileNav = styled.div`
 
   backface-visibility: hidden;
   border-radius: 50%;
-  transform: ${({ isOpen }) => (isOpen ? "scale(120)" : "scale(0)")};
+  transform: ${({ isopen }) => (isopen ? "scale(120)" : "scale(0)")};
   transition: ${({ change }) =>
     change
       ? "transform 0s cubic-bezier(0.86, 0, 0.07, 1);"
@@ -37,11 +37,11 @@ export const BackgroundForMobileNav = styled.div`
 
 export const BackgroundNav = styled.nav`
   height: 100vh;
-  width: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  width: ${({ isopen }) => (isopen ? "100%" : "0")};
   position: fixed;
   top: 0;
   left: 0;
-  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
+  opacity: ${({ isopen }) => (isopen ? "1" : "0")};
   transition: ${({ change }) =>
     change
       ? "all 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);"
@@ -145,8 +145,8 @@ export const ContactDetailsMobile = styled.div`
 
 export const MobileListItem = styled.li`
   cursor: pointer;
-  transform: ${({ isOpen }) =>
-    isOpen ? "translateX(0)" : "translateX(150vw)"};
+  transform: ${({ isopen }) =>
+    isopen ? "translateX(0)" : "translateX(150vw)"};
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
   width: 100%;

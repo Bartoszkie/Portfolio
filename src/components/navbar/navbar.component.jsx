@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
-import { useOnClckOutside } from "../../hooks/useOnClickOutside";
+import React, { useState, useEffect } from "react";
 
 import {
   NavbarContainer,
@@ -25,8 +24,6 @@ import Hamburger from "../hamburger/hamburger.component";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [change, setChange] = useState(false);
-  const node = useRef();
-  useOnClckOutside(node, () => setIsOpen(false));
 
   useEffect(() => {
     updatePredicate();
@@ -48,7 +45,7 @@ const Navbar = () => {
   console.log(isOpen);
 
   return (
-    <NavbarContainer isOpen={isOpen}>
+    <NavbarContainer isopen={isOpen}>
       <NavbarDiv>
         <NavbarMainContainer>
           <PictureOfMe></PictureOfMe>
@@ -71,13 +68,13 @@ const Navbar = () => {
           <ContactDetails>
             <p>Contact</p>
             <span>
-              <i class="fas fa-envelope-open-text"></i> bartek.slysz@gmail.com
+              <i className="fas fa-envelope-open-text"></i> bartek.slysz@gmail.com
             </span>
             <span>
-              <i class="fas fa-phone"></i> +48 662 920 264
+              <i className="fas fa-phone"></i> +48 662 920 264
             </span>
             <span>
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
               <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
                 My Github
               </a>
@@ -86,48 +83,48 @@ const Navbar = () => {
         </MenuListFooter>
       </NavbarDiv>
 
-      <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
-      <BackgroundForMobileNav change={change} isOpen={isOpen} />
-      <BackgroundNav change={change} isOpen={isOpen}>
-        <BackgroundForMobileList change={change} isOpen={isOpen}>
-          <MobileListItem isOpen={isOpen}>
+      <Hamburger isopen={isOpen} setIsOpen={setIsOpen} />
+      <BackgroundForMobileNav change={change} isopen={isOpen} />
+      <BackgroundNav change={change} isopen={isOpen}>
+        <BackgroundForMobileList change={change} isopen={isOpen}>
+          <MobileListItem isopen={isOpen}>
             <AnimatedHref
               onClick={() => setIsOpen(!isOpen)}
-              isOpen={isOpen}
+              isopen={isOpen}
               to="/"
             >
               About Me
             </AnimatedHref>
           </MobileListItem>
-          <MobileListItem isOpen={isOpen}>
+          <MobileListItem isopen={isOpen}>
             <AnimatedHref
               onClick={() => setIsOpen(!isOpen)}
-              isOpen={isOpen}
+              isopen={isOpen}
               to="/realizations"
             >
               Realizations
             </AnimatedHref>
           </MobileListItem>
-          <MobileListItem isOpen={isOpen}>
+          <MobileListItem isopen={isOpen}>
             <AnimatedHref
               onClick={() => setIsOpen(!isOpen)}
-              isOpen={isOpen}
+              isopen={isOpen}
               to="/timeline"
             >
               Timeline
             </AnimatedHref>
           </MobileListItem>
-          <MobileListItem isOpen={isOpen}>
+          <MobileListItem isopen={isOpen}>
             <ContactDetailsMobile>
               <p>Contact</p>
               <span>
-                <i class="fas fa-envelope-open-text"></i> bartek.slysz@gmail.com
+                <i className="fas fa-envelope-open-text"></i> bartek.slysz@gmail.com
               </span>
               <span>
-                <i class="fas fa-phone"></i> +48 662 920 264
+                <i className="fas fa-phone"></i> +48 662 920 264
               </span>
               <span>
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
                   My Github
                 </a>
