@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bgImageHeader from "../../assets/IMG/bg-header-about-me.jpg";
+import bgImageHeader from "../../assets/IMG/bg-header-about-me.webp";
 import { device } from "../../styles/globalSizes";
 
 export const AboutMeContainer = styled.section`

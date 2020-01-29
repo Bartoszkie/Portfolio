@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bgImageHeader from "../../assets/IMG/bg-timeline-why-timeline.jpg";
+import bgImageHeader from "../../assets/IMG/bg-timeline-why-timeline.webp";
 import { device } from "../../styles/globalSizes";
 
 export const TimelinePage = styled.section`
