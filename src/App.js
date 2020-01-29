@@ -19,7 +19,7 @@ const App = () => {
         <GlobalStyles />
         <Navbar />
         <Switch>
-          <Route exact path="/" component={AboutMe} />
+          <Route exact path="/Portfolio" component={AboutMe} />
           <Route path="/timeline" component={Timeline} />
           <Route path="/realizations" component={Realizations} />
         </Switch>

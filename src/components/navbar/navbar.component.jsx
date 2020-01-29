@@ -35,7 +35,7 @@ const Navbar = () => {
         <MenuListWrapper>
           <MenuList>
             <MenuListItem>
-              <MenuLink to="/">About Me</MenuLink>
+              <MenuLink to="/Portfolio">About Me</MenuLink>
             </MenuListItem>
             <MenuListItem>
               <MenuLink to="/realizations">Realizations</MenuLink>
@@ -59,7 +59,7 @@ const Navbar = () => {
       <BackgroundNav isOpen={isOpen}>
         <BackgroundForMobileList isOpen={isOpen}>
           <MobileListItem isOpen={isOpen}>
-            <AnimatedHref onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} to="/">About Me</AnimatedHref>
+            <AnimatedHref onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} to="/Portfolio">About Me</AnimatedHref>
           </MobileListItem>
           <MobileListItem isOpen={isOpen}>
             <AnimatedHref onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} to="/realizations">Realizations</AnimatedHref>
