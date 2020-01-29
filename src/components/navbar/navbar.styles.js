@@ -32,7 +32,7 @@ export const BackgroundForMobileNav = styled.div`
 
   height: 3rem;
   width: 3rem;
-  background-image: radial-gradient(black, black);
+  background-color: #000;
 `;
 
 export const BackgroundNav = styled.nav`
