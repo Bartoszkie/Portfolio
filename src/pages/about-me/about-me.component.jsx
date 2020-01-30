@@ -41,15 +41,16 @@ const AboutMe = () => {
 
         <AboutMeSectionCol2>
           <AboutMeParagraph>
-            So, just like in header my name is Bartosz Słysz, I am 21 and I am
-            Junior Frontend Developer. My adventure with programming started in
-            middle school when I was participating in programming contest. C++
-            came up and my programing-skills curve was born.
+            So, just like in header my name is Bartosz Słysz, I am 21, I am IT
+            student at University of Rzeszow and I am Junior Frontend Developer.
+            My adventure with programming started in middle school when I was
+            participating in programming contest. C++ came up and my
+            programing-skills curve was born.
             <br></br>
             <br></br>
             Later in high school I have discovered Java. OOP paradigm was so
             beautifull to me that I couldn't resist to stop learning it. But my
-            "thing" came up when I have came across on advanced HTMl and CSS.
+            "thing" came up when I have came across on advanced HTML and CSS.
             Simplicity of creation astonishing websites just enchanted me. I
             wanted to learn more about it. So then JavaScript came up in my
             desktop. Speed of development even more complicated programs in JS

@@ -18,12 +18,12 @@ const Timeline = () => {
         <TimelineInfo>My timeline</TimelineInfo>
         <TimelineInfoDescription>
           Time-what? Yes timeline. I've created timeline that represents my
-          "curve" of studying, success and failures that I've encourage.
+          "curve" of studying, success and failures that I've encountered.
           <br /> <br />
           Why? Reason is simple: I'm a junior.
-          <br /> <br /> I don't have so much commercial experience which I can show to
-          my client or some software house HRs. That's why this is some sort of
-          "proof" about what I'm doing and what can I do.
+          <br /> <br /> I don't have so much commercial experience which I can
+          show to my client or some software house HRs. That's why this is some
+          sort of "proof" about what I'm doing and what can I do.
         </TimelineInfoDescription>
       </TimelinePageHeader>
       <TimelineContainer>
@@ -37,7 +37,7 @@ const Timeline = () => {
         <Cart
           date={"Jan 5 2016"}
           description={
-            "First intership as a graphic-frontend programmer at MobiTouch Rzeszów"
+            "First internship as a graphic-frontend programmer at MobiTouch Rzeszów"
           }
           right={rightFalse}
         />
@@ -103,14 +103,20 @@ const Timeline = () => {
         />
         <Cart
           date={"January 2019"}
-          description={"Started preparings for summer interships"}
+          description={"Started preparings for summer internships"}
           platform="Everything"
           right={rightTrue}
         />
         <Cart
+          date={"February 2019"}
+          description={"IV place in hackathon 'Hackerz Rzeszow' which took place at Jasionka"}
+          platform="Front-End"
+          right={rightFalse}
+        />
+        <Cart
           date={"June - July 2019"}
           description={
-            "Started intership at IDEO Software as FrontEnd Developer"
+            "Started internship at IDEO Software as FrontEnd Developer"
           }
           right={rightFalse}
         />
