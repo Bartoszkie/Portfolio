@@ -27,7 +27,6 @@ export const BackgroundForMobileNav = styled.div`
   backface-visibility: hidden;
   border-radius: 50%;
   transform: ${({ isopen }) => (isopen ? "scale(120)" : "scale(0)")};
-  transition-duration: 0.8s;
   height: 3rem;
   width: 3rem;
   background-color: #000;
