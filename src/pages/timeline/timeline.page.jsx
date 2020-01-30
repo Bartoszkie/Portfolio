@@ -13,7 +13,7 @@ const Timeline = () => {
   const rightFalse = false;
 
   return (
-    <TimelinePage>
+    <TimelinePage id="timeline">
       <TimelinePageHeader>
         <TimelineInfo>My timeline</TimelineInfo>
         <TimelineInfoDescription>

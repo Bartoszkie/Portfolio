@@ -91,7 +91,7 @@ const Navbar = () => {
             <AnimatedHref
               onClick={() => setIsOpen(!isOpen)}
               isopen={isOpen}
-              to="/"
+              to="/#aboutMe"
             >
               About Me
             </AnimatedHref>
@@ -100,7 +100,7 @@ const Navbar = () => {
             <AnimatedHref
               onClick={() => setIsOpen(!isOpen)}
               isopen={isOpen}
-              to="/realizations"
+              to="/realizations#realizations"
             >
               Realizations
             </AnimatedHref>
@@ -109,7 +109,7 @@ const Navbar = () => {
             <AnimatedHref
               onClick={() => setIsOpen(!isOpen)}
               isopen={isOpen}
-              to="/timeline"
+              to="/timeline#timeline"
             >
               Timeline
             </AnimatedHref>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { device } from "../../styles/globalSizes";
 
 export const NavbarContainer = styled.section`
@@ -155,7 +156,7 @@ export const MobileListItem = styled.li`
   }
 `;
 
-export const AnimatedHref = styled(Link)`
+export const AnimatedHref = styled(HashLink)`
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;

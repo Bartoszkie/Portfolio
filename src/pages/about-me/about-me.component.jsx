@@ -21,7 +21,7 @@ import {
 const AboutMe = () => {
   return (
     <AboutMeContainer>
-      <AboutMeHeader>
+      <AboutMeHeader id="aboutMe">
         <AboutMeHeaderSection>
           <AboutMeH6>Bartosz Słysz</AboutMeH6>
           <AboutMeH1>FrontEnd Developer</AboutMeH1>
