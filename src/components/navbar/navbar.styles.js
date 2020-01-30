@@ -43,7 +43,7 @@ export const BackgroundNav = styled.nav`
   top: 0;
   left: 0;
   opacity: ${({ isopen }) => (isopen ? "1" : "0")};
-  transition-duration: 0.8s;
+  transition-duration: 1.2s;
   text-align: center;
 
   z-index: -100;
