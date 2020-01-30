@@ -27,10 +27,6 @@ export const BackgroundForMobileNav = styled.div`
   backface-visibility: hidden;
   border-radius: 50%;
   transform: ${({ isopen }) => (isopen ? "scale(120)" : "scale(0)")};
-  transition: ${({ change }) =>
-    change
-      ? "all 0s ease-in-out;"
-      : "all 0.8s ease-in-out;"};
   height: 3rem;
   width: 3rem;
   background-color: #000;
@@ -43,10 +39,6 @@ export const BackgroundNav = styled.nav`
   top: 0;
   left: 0;
   opacity: ${({ isopen }) => (isopen ? "1" : "0")};
-  transition: ${({ change }) =>
-    change
-      ? "all 0s ease-in-out;"
-      : "all 0.8s ease-in-out;"};
   text-align: center;
 
   z-index: -100;
