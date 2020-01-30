@@ -75,7 +75,7 @@ const Navbar = () => {
             </span>
             <span>
               <i className="fab fa-github"></i>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
+              <a href="https://github.com/Bartoszkie">
                 My Github
               </a>
             </span>
@@ -125,7 +125,7 @@ const Navbar = () => {
               </span>
               <span>
                 <i className="fab fa-github"></i>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements">
+                <a href="https://github.com/Bartoszkie">
                   My Github
                 </a>
               </span>
