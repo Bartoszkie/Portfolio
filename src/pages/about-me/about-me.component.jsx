@@ -26,8 +26,9 @@ const AboutMe = () => {
           <AboutMeH6>Bartosz Słysz</AboutMeH6>
           <AboutMeH1>FrontEnd Developer</AboutMeH1>
           <AboutMeP>
-            If you are going to do what you love, you will never be even one day
-            in work.
+            If you do what you love, you'll never work a day in your life
+            <br></br>
+            <i>~~Marc Anthony</i>
           </AboutMeP>
         </AboutMeHeaderSection>
       </AboutMeHeader>
@@ -113,7 +114,7 @@ const AboutMe = () => {
           </AboutFooterItem>
           <AboutFooterItem>
             <div>
-            <i className="fab fa-node fa-9x"></i>
+              <i className="fab fa-node fa-9x"></i>
             </div>
             <AboutFooterItemDesc>
               Lately for backend development I have been using Spring Boot. But

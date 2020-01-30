@@ -16,7 +16,10 @@ import {
   RealizationsP
 } from "./realizations.styles";
 
-import CrwnSS from "../../assets/IMG/crwn-gif.gif";
+import CrwnSS from "../../assets/IMG/crwn-clothing-gif.gif";
+import NexterSS from "../../assets/IMG/nexter-gif.gif";
+import NatoureSS from "../../assets/IMG/natoure-gif.gif";
+import TrelloSS from "../../assets/IMG/flex-ss.png";
 
 const Realizations = () => {
   return (
@@ -36,28 +39,22 @@ const Realizations = () => {
           tech="React,SASS,Redux,Firebase,StyledComponents"
         />
         <CartDemo
-          img={CrwnSS}
+          img={TrelloSS}
           title="Flexbox Project"
           description={CartDemoFlexBox}
           tech="HTML 5,SASS"
         />
         <CartDemo
-          img={CrwnSS}
+          img={NatoureSS}
           title="Floats Project"
           description={CartDemoFloats}
           tech="HTML 5,SASS"
         />
         <CartDemo
-          img={CrwnSS}
+          img={NexterSS}
           title="CSS GRID Project"
           description={CartDemoCSSGrid}
           tech="HTML 5,SASS"
-        />
-        <CartDemo
-          img={CrwnSS}
-          title="E-Cancelary"
-          description={CartDemoECancelary}
-          tech="React,SASS,StyledComponents,Firebase,Node.js"
         />
       </RealizationsContent>
     </RealizationsContainer>

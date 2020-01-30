@@ -20,7 +20,7 @@ import {
   ContactDetailsMobile
 } from "./navbar.styles";
 import Hamburger from "../hamburger/hamburger.component";
-
+import LogoMe from "../../assets/IMG/logo-me.jpg";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [change, setChange] = useState(false);
@@ -48,7 +48,7 @@ const Navbar = () => {
     <NavbarContainer isopen={isOpen}>
       <NavbarDiv>
         <NavbarMainContainer>
-          <PictureOfMe></PictureOfMe>
+          <PictureOfMe src={LogoMe} alt="me-logo"></PictureOfMe>
           <Signature>Bartosz Słysz</Signature>
         </NavbarMainContainer>
         <MenuListWrapper>

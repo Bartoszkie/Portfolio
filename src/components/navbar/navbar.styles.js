@@ -202,8 +202,8 @@ export const NavbarMainContainer = styled.header`
 `;
 
 export const PictureOfMe = styled.img`
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   background-color: #fff;
 `;
 
