@@ -20,7 +20,7 @@ export const NavbarContainer = styled.section`
 `;
 
 export const BackgroundForMobileNav = styled.div`
-  position: absolute;
+  position: fixed;
   bottom: 3rem;
   right: 3rem;
 
