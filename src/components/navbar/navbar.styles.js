@@ -30,7 +30,7 @@ export const BackgroundForMobileNav = styled.div`
   transition: ${({ change }) =>
     change
       ? "all 0s cubic-bezier(0.86, 0, 0.07, 1);"
-      : "all 0.8s cubic-bezier(0.86, 0, 0.07, 1);"};
+      : "all 0.6s cubic-bezier(0.86, 0, 0.07, 1);"};
   height: 3rem;
   width: 3rem;
   background-color: #000;
@@ -145,7 +145,7 @@ export const MobileListItem = styled.li`
   cursor: pointer;
   transform: ${({ isopen }) =>
     isopen ? "translateX(0)" : "translateX(150vw)"};
-  transition: all 0.8s cubic-bezier(0.68, -0.45, 0.265, 1.55);
+  transition-duration: 0.8s;
   width: 100%;
   &:not(:last-child) {
     margin-bottom: 2rem;
