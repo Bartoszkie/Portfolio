@@ -20,6 +20,10 @@ export const CartDemoContainer = styled.div`
 
 export const CartDemoImg = styled.img`
   width: 100%;
+`;
+
+export const CartDemoLinkTo = styled.a`
+  text-decoration: none;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 

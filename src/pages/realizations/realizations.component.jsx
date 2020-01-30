@@ -34,24 +34,28 @@ const Realizations = () => {
       <RealizationsContent>
         <CartDemo
           img={CrwnSS}
+          repo="https://crwn-clothing-cv.herokuapp.com/"
           title="CRWN CLOTHNING"
           description={CartDemoText1}
           tech="React,SASS,Redux,Firebase,StyledComponents"
         />
         <CartDemo
           img={TrelloSS}
+          repo="https://bartoszkie.github.io/Flexbox-project---Trillo/"
           title="Flexbox Project"
           description={CartDemoFlexBox}
           tech="HTML 5,SASS"
         />
         <CartDemo
           img={NatoureSS}
+          repo="https://bartoszkie.github.io/Float-project---Natoure/"
           title="Floats Project"
           description={CartDemoFloats}
           tech="HTML 5,SASS"
         />
         <CartDemo
           img={NexterSS}
+          repo="https://bartoszkie.github.io/CSS_GRID-project---Nexter/"
           title="CSS GRID Project"
           description={CartDemoCSSGrid}
           tech="HTML 5,SASS"

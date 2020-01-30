@@ -7,7 +7,8 @@ import {
   CartDemoDetailsName,
   CartDemoFooter,
   TechNames,
-  TechNamesP
+  TechNamesP,
+  CartDemoLinkTo
 } from "./cart-demo.styles";
 
 const CartDemo = props => {
@@ -22,7 +23,9 @@ const CartDemo = props => {
 
   return (
     <CartDemoContainer>
-      <CartDemoImg src={props.img} />
+      <CartDemoLinkTo href={props.repo}>
+        <CartDemoImg src={props.img} />
+      </CartDemoLinkTo>
       <CartDemoDetails>
         <CartDemoDetailsName>{props.title}</CartDemoDetailsName>
         <CartDemoDescr>{props.description}</CartDemoDescr>
