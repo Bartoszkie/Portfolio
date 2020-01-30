@@ -29,8 +29,8 @@ export const BackgroundForMobileNav = styled.div`
   transform: ${({ isopen }) => (isopen ? "scale(120)" : "scale(0)")};
   transition: ${({ change }) =>
     change
-      ? "transform 0s cubic-bezier(0.86, 0, 0.07, 1);"
-      : "transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);"};
+      ? "all 0s cubic-bezier(0.86, 0, 0.07, 1);"
+      : "all 0.8s cubic-bezier(0.86, 0, 0.07, 1);"};
   height: 3rem;
   width: 3rem;
   background-color: #000;
