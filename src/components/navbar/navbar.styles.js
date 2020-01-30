@@ -27,10 +27,7 @@ export const BackgroundForMobileNav = styled.div`
   backface-visibility: hidden;
   border-radius: 50%;
   transform: ${({ isopen }) => (isopen ? "scale(120)" : "scale(0)")};
-  transition: ${({ change }) =>
-    change
-      ? "all 0s cubic-bezier(0.86, 0, 0.07, 1);"
-      : "all 0.8s cubic-bezier(0.86, 0, 0.07, 1);"};
+
   height: 3rem;
   width: 3rem;
   background-color: #000;
@@ -43,10 +40,7 @@ export const BackgroundNav = styled.nav`
   top: 0;
   left: 0;
   opacity: ${({ isopen }) => (isopen ? "1" : "0")};
-  transition: ${({ change }) =>
-    change
-      ? "all 0s cubic-bezier(0.68, -0.55, 0.265, 1.55);"
-      : "all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);"};
+
   text-align: center;
 
   z-index: -100;
@@ -148,7 +142,7 @@ export const MobileListItem = styled.li`
   cursor: pointer;
   transform: ${({ isopen }) =>
     isopen ? "translateX(0)" : "translateX(150vw)"};
-  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
 
   width: 100%;
   &:not(:last-child) {
