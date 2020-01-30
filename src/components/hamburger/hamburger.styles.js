@@ -4,7 +4,7 @@ import {device} from '../../styles/globalSizes';
 export const HamburgerContainer = styled.button`
     display: none;
 
-    position: absolute;
+    position: fixed;
     bottom: 2rem;
     right: 2rem; 
     z-index: 150;
