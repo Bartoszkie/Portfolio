@@ -90,7 +90,7 @@ const Navbar = () => {
           <MobileListItem isopen={isOpen}>
             <AnimatedHref
               onClick={() => setIsOpen(!isOpen)}
-              isopen={isOpen}
+              isopen={isOpen.toString()}
               to="/#aboutMe"
             >
               About Me
@@ -99,7 +99,7 @@ const Navbar = () => {
           <MobileListItem isopen={isOpen}>
             <AnimatedHref
               onClick={() => setIsOpen(!isOpen)}
-              isopen={isOpen}
+              isopen={isOpen.toString()}
               to="/realizations#realizations"
             >
               Realizations
@@ -108,7 +108,7 @@ const Navbar = () => {
           <MobileListItem isopen={isOpen}>
             <AnimatedHref
               onClick={() => setIsOpen(!isOpen)}
-              isopen={isOpen}
+              isopen={isOpen.toString()}
               to="/timeline#timeline"
             >
               Timeline
