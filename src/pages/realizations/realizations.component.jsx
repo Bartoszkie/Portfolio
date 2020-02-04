@@ -35,7 +35,7 @@ const Realizations = () => {
         <CartDemo
           img={CrwnSS}
           repo="https://crwn-clothing-cv.herokuapp.com/"
-          title="CRWN CLOTHNING"
+          title="CRWN CLOTHING"
           description={CartDemoText1}
           tech="React,SASS,Redux,Firebase,StyledComponents"
         />
